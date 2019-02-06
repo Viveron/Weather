@@ -35,6 +35,16 @@
 		0CC83509220B04C3006E0F92 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83508220B04C3006E0F92 /* WeatherIcon.swift */; };
 		0CC8350C220B23A5006E0F92 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8350B220B23A5006E0F92 /* UILabel+Extensions.swift */; };
 		0CC8350F220B2574006E0F92 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8350E220B2574006E0F92 /* UIImage+Extensions.swift */; };
+		0CC83513220B2F4C006E0F92 /* OpenWeatherMapResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83512220B2F4C006E0F92 /* OpenWeatherMapResponce.swift */; };
+		0CC83515220B36E9006E0F92 /* OpenWeatherMapResponce+Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83514220B36E9006E0F92 /* OpenWeatherMapResponce+Forecast.swift */; };
+		0CC83518220B3741006E0F92 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83517220B3741006E0F92 /* City.swift */; };
+		0CC8351D220B4329006E0F92 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8351C220B4329006E0F92 /* JSONDecoder+Extensions.swift */; };
+		0CC83520220B434A006E0F92 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8351F220B434A006E0F92 /* ResponseError.swift */; };
+		0CC83524220B44A6006E0F92 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83523220B44A6006E0F92 /* LocationService.swift */; };
+		0CC83526220B45CE006E0F92 /* LocationService+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83525220B45CE006E0F92 /* LocationService+Notifications.swift */; };
+		0CC83529220B4EB1006E0F92 /* OpenWeatherMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83528220B4EB0006E0F92 /* OpenWeatherMapService.swift */; };
+		0CC8352B220B5109006E0F92 /* Error+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8352A220B5109006E0F92 /* Error+Extensions.swift */; };
+		0CC8352F220B63AE006E0F92 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8352E220B63AE006E0F92 /* UIColor+Hex.swift */; };
 		0CF02C6A220A58A20094ECA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CF02C69220A58A20094ECA7 /* GoogleService-Info.plist */; };
 		C2E87CBDBE20C4B8247E2E51 /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7DA9006C2D44755D57F593 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +80,16 @@
 		0CC83508220B04C3006E0F92 /* WeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
 		0CC8350B220B23A5006E0F92 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		0CC8350E220B2574006E0F92 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		0CC83512220B2F4C006E0F92 /* OpenWeatherMapResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapResponce.swift; sourceTree = "<group>"; };
+		0CC83514220B36E9006E0F92 /* OpenWeatherMapResponce+Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenWeatherMapResponce+Forecast.swift"; sourceTree = "<group>"; };
+		0CC83517220B3741006E0F92 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		0CC8351C220B4329006E0F92 /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
+		0CC8351F220B434A006E0F92 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		0CC83523220B44A6006E0F92 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		0CC83525220B45CE006E0F92 /* LocationService+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationService+Notifications.swift"; sourceTree = "<group>"; };
+		0CC83528220B4EB0006E0F92 /* OpenWeatherMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapService.swift; sourceTree = "<group>"; };
+		0CC8352A220B5109006E0F92 /* Error+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Extensions.swift"; sourceTree = "<group>"; };
+		0CC8352E220B63AE006E0F92 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		0CF02C69220A58A20094ECA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A7DA9006C2D44755D57F593 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B816F478CD2AC19820A42DDD /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +203,7 @@
 		0CC834C7220A76B8006E0F92 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0CC83521220B43B3006E0F92 /* Services */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -190,7 +211,9 @@
 		0CC834C8220A76CA006E0F92 /* ModelsLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0CC83516220B3738006E0F92 /* City */,
 				0CC83507220B04B7006E0F92 /* WeatherIcon */,
+				0CC83511220B2F2C006E0F92 /* OpenWeatherMapResponce */,
 			);
 			path = ModelsLayer;
 			sourceTree = "<group>";
@@ -214,6 +237,7 @@
 		0CC834CB220A7B75006E0F92 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0CC8352D220B639F006E0F92 /* UIColor */,
 				0CC8350D220B2554006E0F92 /* UIImage */,
 				0CC8350A220B2398006E0F92 /* UILabel */,
 			);
@@ -278,6 +302,8 @@
 		0CC834DC220AD7E9006E0F92 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0CC8351E220B433E006E0F92 /* Common */,
+				0CC8351A220B4315006E0F92 /* Extensions */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -383,6 +409,90 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		0CC83511220B2F2C006E0F92 /* OpenWeatherMapResponce */ = {
+			isa = PBXGroup;
+			children = (
+				0CC83512220B2F4C006E0F92 /* OpenWeatherMapResponce.swift */,
+				0CC83514220B36E9006E0F92 /* OpenWeatherMapResponce+Forecast.swift */,
+			);
+			path = OpenWeatherMapResponce;
+			sourceTree = "<group>";
+		};
+		0CC83516220B3738006E0F92 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				0CC83517220B3741006E0F92 /* City.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		0CC8351A220B4315006E0F92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0CC8352C220B5130006E0F92 /* Error */,
+				0CC8351B220B431A006E0F92 /* JSONDecoder */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0CC8351B220B431A006E0F92 /* JSONDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				0CC8351C220B4329006E0F92 /* JSONDecoder+Extensions.swift */,
+			);
+			path = JSONDecoder;
+			sourceTree = "<group>";
+		};
+		0CC8351E220B433E006E0F92 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0CC8351F220B434A006E0F92 /* ResponseError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0CC83521220B43B3006E0F92 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0CC83522220B43BC006E0F92 /* LocationService */,
+				0CC83527220B4E98006E0F92 /* OpenWeatherMapService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0CC83522220B43BC006E0F92 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				0CC83523220B44A6006E0F92 /* LocationService.swift */,
+				0CC83525220B45CE006E0F92 /* LocationService+Notifications.swift */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
+		0CC83527220B4E98006E0F92 /* OpenWeatherMapService */ = {
+			isa = PBXGroup;
+			children = (
+				0CC83528220B4EB0006E0F92 /* OpenWeatherMapService.swift */,
+			);
+			path = OpenWeatherMapService;
+			sourceTree = "<group>";
+		};
+		0CC8352C220B5130006E0F92 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				0CC8352A220B5109006E0F92 /* Error+Extensions.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		0CC8352D220B639F006E0F92 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				0CC8352E220B63AE006E0F92 /* UIColor+Hex.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		CD18A127EB302ECE833831DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,6 +594,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Weather/Pods-Weather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -496,6 +607,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -539,23 +651,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CC834FC220AFDF3006E0F92 /* ViewController.swift in Sources */,
+				0CC8352F220B63AE006E0F92 /* UIColor+Hex.swift in Sources */,
 				0CC83506220B03D1006E0F92 /* FontFamily+WeatherIcons.swift in Sources */,
 				0CC834F5220AEF64006E0F92 /* FontFamily.swift in Sources */,
 				0C9FEAE8220A55E3007F05F7 /* AppDelegate.swift in Sources */,
+				0CC83518220B3741006E0F92 /* City.swift in Sources */,
 				0CC834D4220A80EA006E0F92 /* HomeViewModel.swift in Sources */,
 				0CC834D6220A815C006E0F92 /* HomeModuleAssembly.swift in Sources */,
 				0CC834E6220AE226006E0F92 /* Swift+Blocks.swift in Sources */,
 				0CC8350F220B2574006E0F92 /* UIImage+Extensions.swift in Sources */,
 				0CC8350C220B23A5006E0F92 /* UILabel+Extensions.swift in Sources */,
+				0CC8351D220B4329006E0F92 /* JSONDecoder+Extensions.swift in Sources */,
+				0CC83526220B45CE006E0F92 /* LocationService+Notifications.swift in Sources */,
 				0CC834E8220AE257006E0F92 /* HomeTabBarItem.swift in Sources */,
+				0CC83513220B2F4C006E0F92 /* OpenWeatherMapResponce.swift in Sources */,
+				0CC83515220B36E9006E0F92 /* OpenWeatherMapResponce+Forecast.swift in Sources */,
+				0CC83529220B4EB1006E0F92 /* OpenWeatherMapService.swift in Sources */,
 				0CC83501220AFE98006E0F92 /* ViewOutput.swift in Sources */,
 				0CC834D2220A80D4006E0F92 /* HomeViewController.swift in Sources */,
 				0CC834F7220AEFDC006E0F92 /* FontFamily+Roboto.swift in Sources */,
 				0CC834D9220A825C006E0F92 /* HomeControllersFactory.swift in Sources */,
 				0CC834E1220AE1B4006E0F92 /* HomeViewInput.swift in Sources */,
+				0CC8352B220B5109006E0F92 /* Error+Extensions.swift in Sources */,
 				0CC83509220B04C3006E0F92 /* WeatherIcon.swift in Sources */,
 				0CC834DF220AE17D006E0F92 /* HomeViewOutput.swift in Sources */,
 				0CC834FA220AFD55006E0F92 /* TabBarController.swift in Sources */,
+				0CC83524220B44A6006E0F92 /* LocationService.swift in Sources */,
+				0CC83520220B434A006E0F92 /* ResponseError.swift in Sources */,
 				0CC834EE220AE4A5006E0F92 /* String+Constants.swift in Sources */,
 				0CC834EA220AE29B006E0F92 /* HomeTabBarItem+Appearance.swift in Sources */,
 			);

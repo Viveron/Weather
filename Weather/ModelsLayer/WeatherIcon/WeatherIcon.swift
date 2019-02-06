@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol WeatherIcon {
+protocol WeatherIcon: Codable {
     
     // UI representation
     var formatted: String { get }
@@ -39,6 +39,9 @@ enum NightWeather: String, WeatherIcon {
 }
 
 enum GeneralWeather: UniChar, WeatherIcon {
+    // N/A
+    case none = 0xf07b
+    
     // UI elements
     case sunny     = 0xf00d
     case lightning = 0xf025

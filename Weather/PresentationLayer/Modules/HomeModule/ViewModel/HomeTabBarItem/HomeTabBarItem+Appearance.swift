@@ -13,8 +13,8 @@ extension HomeTabBarItem {
     struct Appearance {
         
         static let normalTintColor: UIColor = .black
-        static let selectedTintColor: UIColor = .red
+        static let selectedTintColor: UIColor = UIColor(hex: 0xFF8A00)
         
-        static let titleFont = UIFont(Roboto.medium, size: .small)
+        static let titleFont = UIFont(Roboto.medium, size: .lite)
     }
 }

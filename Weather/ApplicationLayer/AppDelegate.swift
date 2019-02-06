@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,15 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = HomeModuleAssembly.createModule()
         window?.makeKeyAndVisible()
         
-        let familyNames = UIFont.familyNames
+        let coordinate = CLLocationCoordinate2D(latitude: 12, longitude: 23)
         
-        for family in familyNames {
-            print("Family name " + family)
-            let fontNames = UIFont.fontNames(forFamilyName: family)
+        OpenWeatherMapService().obtainForecast(coordinate) { responce in
             
-            for font in fontNames {
-                print("    Font name: " + font)
-            }
         }
         
         return true
