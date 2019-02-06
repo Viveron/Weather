@@ -24,6 +24,7 @@
 	<string>LaunchScreen</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>weathericons-regular-webfont.ttf</string>
 		<string>Roboto-Light.ttf</string>
 		<string>Roboto-Regular.ttf</string>
 		<string>Roboto-Bold.ttf</string>

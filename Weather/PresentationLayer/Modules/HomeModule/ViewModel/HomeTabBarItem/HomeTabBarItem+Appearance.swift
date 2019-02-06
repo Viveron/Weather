@@ -15,6 +15,6 @@ extension HomeTabBarItem {
         static let normalTintColor: UIColor = .black
         static let selectedTintColor: UIColor = .red
         
-        static let titleFont = UIFont(Roboto.medium, size: .normal)
+        static let titleFont = UIFont(Roboto.medium, size: .small)
     }
 }

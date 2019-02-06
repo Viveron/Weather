@@ -30,6 +30,11 @@
 		0CC834FA220AFD55006E0F92 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC834F9220AFD55006E0F92 /* TabBarController.swift */; };
 		0CC834FC220AFDF3006E0F92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC834FB220AFDF3006E0F92 /* ViewController.swift */; };
 		0CC83501220AFE98006E0F92 /* ViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83500220AFE98006E0F92 /* ViewOutput.swift */; };
+		0CC83504220B02B1006E0F92 /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CC83503220B02B1006E0F92 /* weathericons-regular-webfont.ttf */; };
+		0CC83506220B03D1006E0F92 /* FontFamily+WeatherIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83505220B03D1006E0F92 /* FontFamily+WeatherIcons.swift */; };
+		0CC83509220B04C3006E0F92 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83508220B04C3006E0F92 /* WeatherIcon.swift */; };
+		0CC8350C220B23A5006E0F92 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8350B220B23A5006E0F92 /* UILabel+Extensions.swift */; };
+		0CC8350F220B2574006E0F92 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8350E220B2574006E0F92 /* UIImage+Extensions.swift */; };
 		0CF02C6A220A58A20094ECA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CF02C69220A58A20094ECA7 /* GoogleService-Info.plist */; };
 		C2E87CBDBE20C4B8247E2E51 /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7DA9006C2D44755D57F593 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +65,11 @@
 		0CC834F9220AFD55006E0F92 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0CC834FB220AFDF3006E0F92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0CC83500220AFE98006E0F92 /* ViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutput.swift; sourceTree = "<group>"; };
+		0CC83503220B02B1006E0F92 /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
+		0CC83505220B03D1006E0F92 /* FontFamily+WeatherIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FontFamily+WeatherIcons.swift"; sourceTree = "<group>"; };
+		0CC83508220B04C3006E0F92 /* WeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
+		0CC8350B220B23A5006E0F92 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		0CC8350E220B2574006E0F92 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		0CF02C69220A58A20094ECA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A7DA9006C2D44755D57F593 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B816F478CD2AC19820A42DDD /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +134,7 @@
 		0CC834B6220A6801006E0F92 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				0CC83502220B0299006E0F92 /* WeatherIcons */,
 				0CC834B7220A680A006E0F92 /* Roboto */,
 			);
 			path = Fonts;
@@ -179,6 +190,7 @@
 		0CC834C8220A76CA006E0F92 /* ModelsLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0CC83507220B04B7006E0F92 /* WeatherIcon */,
 			);
 			path = ModelsLayer;
 			sourceTree = "<group>";
@@ -202,6 +214,8 @@
 		0CC834CB220A7B75006E0F92 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0CC8350D220B2554006E0F92 /* UIImage */,
+				0CC8350A220B2398006E0F92 /* UILabel */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,6 +320,7 @@
 			children = (
 				0CC834F4220AEF64006E0F92 /* FontFamily.swift */,
 				0CC834F6220AEFDC006E0F92 /* FontFamily+Roboto.swift */,
+				0CC83505220B03D1006E0F92 /* FontFamily+WeatherIcons.swift */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -334,6 +349,38 @@
 				0CC834FD220AFDFA006E0F92 /* ViewController */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		0CC83502220B0299006E0F92 /* WeatherIcons */ = {
+			isa = PBXGroup;
+			children = (
+				0CC83503220B02B1006E0F92 /* weathericons-regular-webfont.ttf */,
+			);
+			path = WeatherIcons;
+			sourceTree = "<group>";
+		};
+		0CC83507220B04B7006E0F92 /* WeatherIcon */ = {
+			isa = PBXGroup;
+			children = (
+				0CC83508220B04C3006E0F92 /* WeatherIcon.swift */,
+			);
+			path = WeatherIcon;
+			sourceTree = "<group>";
+		};
+		0CC8350A220B2398006E0F92 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				0CC8350B220B23A5006E0F92 /* UILabel+Extensions.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		0CC8350D220B2554006E0F92 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				0CC8350E220B2574006E0F92 /* UIImage+Extensions.swift */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 		CD18A127EB302ECE833831DE /* Frameworks */ = {
@@ -418,6 +465,7 @@
 				0CC834C1220A68A2006E0F92 /* Roboto-Regular.ttf in Resources */,
 				0C9FEAF2220A55E5007F05F7 /* LaunchScreen.storyboard in Resources */,
 				0CC834BF220A68A2006E0F92 /* Roboto-Bold.ttf in Resources */,
+				0CC83504220B02B1006E0F92 /* weathericons-regular-webfont.ttf in Resources */,
 				0CC834BE220A68A2006E0F92 /* Roboto-Light.ttf in Resources */,
 				0CF02C6A220A58A20094ECA7 /* GoogleService-Info.plist in Resources */,
 				0C9FEAEF220A55E5007F05F7 /* Assets.xcassets in Resources */,
@@ -491,17 +539,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CC834FC220AFDF3006E0F92 /* ViewController.swift in Sources */,
+				0CC83506220B03D1006E0F92 /* FontFamily+WeatherIcons.swift in Sources */,
 				0CC834F5220AEF64006E0F92 /* FontFamily.swift in Sources */,
 				0C9FEAE8220A55E3007F05F7 /* AppDelegate.swift in Sources */,
 				0CC834D4220A80EA006E0F92 /* HomeViewModel.swift in Sources */,
 				0CC834D6220A815C006E0F92 /* HomeModuleAssembly.swift in Sources */,
 				0CC834E6220AE226006E0F92 /* Swift+Blocks.swift in Sources */,
+				0CC8350F220B2574006E0F92 /* UIImage+Extensions.swift in Sources */,
+				0CC8350C220B23A5006E0F92 /* UILabel+Extensions.swift in Sources */,
 				0CC834E8220AE257006E0F92 /* HomeTabBarItem.swift in Sources */,
 				0CC83501220AFE98006E0F92 /* ViewOutput.swift in Sources */,
 				0CC834D2220A80D4006E0F92 /* HomeViewController.swift in Sources */,
 				0CC834F7220AEFDC006E0F92 /* FontFamily+Roboto.swift in Sources */,
 				0CC834D9220A825C006E0F92 /* HomeControllersFactory.swift in Sources */,
 				0CC834E1220AE1B4006E0F92 /* HomeViewInput.swift in Sources */,
+				0CC83509220B04C3006E0F92 /* WeatherIcon.swift in Sources */,
 				0CC834DF220AE17D006E0F92 /* HomeViewOutput.swift in Sources */,
 				0CC834FA220AFD55006E0F92 /* TabBarController.swift in Sources */,
 				0CC834EE220AE4A5006E0F92 /* String+Constants.swift in Sources */,

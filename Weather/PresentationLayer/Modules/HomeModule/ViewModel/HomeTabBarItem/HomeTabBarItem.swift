@@ -18,6 +18,16 @@ enum HomeTabBarItem: String {
     }
     
     var image: UIImage? {
-        return nil
+        let icon: GeneralWeather
+        switch self {
+        case .today:
+            icon = .sunny
+        
+        case .forecast:
+            icon = .lightning
+        }
+        
+        return UILabel.weatherImage(for: icon,
+                                    imageSize: CGSize(width: 30, height: 30))
     }
 }
