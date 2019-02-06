@@ -30,21 +30,21 @@ final class HomeControllersFactory {
     
     private func makeTabBarItem(at item: HomeTabBarItem) -> UITabBarItem {
         let tabBarItem = UITabBarItem(title: item.title,
-                                      image: item.appearance.image,
-                                      selectedImage: item.appearance.selectedImage)
+                                      image: item.image,
+                                      selectedImage: item.image)
         
         // as 'Any' for hide precompiler warnings
-        let font = item.appearance.titleFont as Any
+        let font = HomeTabBarItem.Appearance.titleFont as Any
         
         let normalAttributes: [NSAttributedString.Key: Any] = [
             .font: font,
-            .foregroundColor: item.appearance.color
+            .foregroundColor: HomeTabBarItem.Appearance.normalTintColor
         ]
         tabBarItem.setTitleTextAttributes(normalAttributes, for: .normal)
         
         let selectedAttributes: [NSAttributedString.Key: Any] = [
             .font: font,
-            .foregroundColor: item.appearance.selectedColor
+            .foregroundColor: HomeTabBarItem.Appearance.selectedTintColor
         ]
         tabBarItem.setTitleTextAttributes(selectedAttributes, for: .selected)
         

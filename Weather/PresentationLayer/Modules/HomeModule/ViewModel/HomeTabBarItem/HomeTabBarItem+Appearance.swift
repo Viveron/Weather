@@ -12,18 +12,9 @@ extension HomeTabBarItem {
     
     struct Appearance {
         
-        let image: UIImage?
-        let color: UIColor = .black
+        static let normalTintColor: UIColor = .black
+        static let selectedTintColor: UIColor = .red
         
-        let selectedImage: UIImage?
-        let selectedColor: UIColor = .blue
-        
-        let titleFont = UIFont(Roboto.medium, size: .normal)
-        
-        init(symbolCode: String) {
-            
-            image = nil
-            selectedImage = nil
-        }
+        static let titleFont = UIFont(Roboto.medium, size: .normal)
     }
 }

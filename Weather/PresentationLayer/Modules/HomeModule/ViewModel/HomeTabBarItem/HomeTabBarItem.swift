@@ -6,7 +6,7 @@
 //  Copyright © 2019 Victor Shabanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum HomeTabBarItem: String {
     
@@ -17,13 +17,7 @@ enum HomeTabBarItem: String {
         return rawValue
     }
     
-    var appearance: Appearance {
-        switch self {
-        case .today:
-            return Appearance(symbolCode: .empty)
-            
-        case .forecast:
-            return Appearance(symbolCode: .empty)
-        }
+    var image: UIImage? {
+        return nil
     }
 }

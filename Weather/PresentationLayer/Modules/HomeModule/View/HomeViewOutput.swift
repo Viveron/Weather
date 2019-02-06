@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol HomeViewOutput {
+protocol HomeViewOutput: ViewOutput {
     
-    func viewDidLoad()
+    var items: [HomeTabBarItem] { get }
 }

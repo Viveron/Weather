@@ -27,6 +27,9 @@
 		0CC834EE220AE4A5006E0F92 /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC834ED220AE4A5006E0F92 /* String+Constants.swift */; };
 		0CC834F5220AEF64006E0F92 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC834F4220AEF64006E0F92 /* FontFamily.swift */; };
 		0CC834F7220AEFDC006E0F92 /* FontFamily+Roboto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC834F6220AEFDC006E0F92 /* FontFamily+Roboto.swift */; };
+		0CC834FA220AFD55006E0F92 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC834F9220AFD55006E0F92 /* TabBarController.swift */; };
+		0CC834FC220AFDF3006E0F92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC834FB220AFDF3006E0F92 /* ViewController.swift */; };
+		0CC83501220AFE98006E0F92 /* ViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83500220AFE98006E0F92 /* ViewOutput.swift */; };
 		0CF02C6A220A58A20094ECA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CF02C69220A58A20094ECA7 /* GoogleService-Info.plist */; };
 		C2E87CBDBE20C4B8247E2E51 /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7DA9006C2D44755D57F593 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,9 @@
 		0CC834ED220AE4A5006E0F92 /* String+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
 		0CC834F4220AEF64006E0F92 /* FontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
 		0CC834F6220AEFDC006E0F92 /* FontFamily+Roboto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FontFamily+Roboto.swift"; sourceTree = "<group>"; };
+		0CC834F9220AFD55006E0F92 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0CC834FB220AFDF3006E0F92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CC83500220AFE98006E0F92 /* ViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutput.swift; sourceTree = "<group>"; };
 		0CF02C69220A58A20094ECA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A7DA9006C2D44755D57F593 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B816F478CD2AC19820A42DDD /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 		0CC834CA220A7B6E006E0F92 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0CC834FF220AFE7A006E0F92 /* MVVM */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -301,6 +308,32 @@
 				0CC834F6220AEFDC006E0F92 /* FontFamily+Roboto.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		0CC834F8220AFD47006E0F92 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				0CC834F9220AFD55006E0F92 /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		0CC834FD220AFDFA006E0F92 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CC834FB220AFDF3006E0F92 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0CC834FF220AFE7A006E0F92 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				0CC83500220AFE98006E0F92 /* ViewOutput.swift */,
+				0CC834F8220AFD47006E0F92 /* TabBarController */,
+				0CC834FD220AFDFA006E0F92 /* ViewController */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		CD18A127EB302ECE833831DE /* Frameworks */ = {
@@ -457,17 +490,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC834FC220AFDF3006E0F92 /* ViewController.swift in Sources */,
 				0CC834F5220AEF64006E0F92 /* FontFamily.swift in Sources */,
 				0C9FEAE8220A55E3007F05F7 /* AppDelegate.swift in Sources */,
 				0CC834D4220A80EA006E0F92 /* HomeViewModel.swift in Sources */,
 				0CC834D6220A815C006E0F92 /* HomeModuleAssembly.swift in Sources */,
 				0CC834E6220AE226006E0F92 /* Swift+Blocks.swift in Sources */,
 				0CC834E8220AE257006E0F92 /* HomeTabBarItem.swift in Sources */,
+				0CC83501220AFE98006E0F92 /* ViewOutput.swift in Sources */,
 				0CC834D2220A80D4006E0F92 /* HomeViewController.swift in Sources */,
 				0CC834F7220AEFDC006E0F92 /* FontFamily+Roboto.swift in Sources */,
 				0CC834D9220A825C006E0F92 /* HomeControllersFactory.swift in Sources */,
 				0CC834E1220AE1B4006E0F92 /* HomeViewInput.swift in Sources */,
 				0CC834DF220AE17D006E0F92 /* HomeViewOutput.swift in Sources */,
+				0CC834FA220AFD55006E0F92 /* TabBarController.swift in Sources */,
 				0CC834EE220AE4A5006E0F92 /* String+Constants.swift in Sources */,
 				0CC834EA220AE29B006E0F92 /* HomeTabBarItem+Appearance.swift in Sources */,
 			);

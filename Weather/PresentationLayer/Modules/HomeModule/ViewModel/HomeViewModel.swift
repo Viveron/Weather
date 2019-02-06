@@ -16,7 +16,9 @@ final class HomeViewModel: HomeViewOutput {
     
     // MARK: - HomeViewOutput
     
+    let items: [HomeTabBarItem] =  [.today, .forecast]
+    
     func viewDidLoad() {
-        input?.configure(with: [.today, .forecast])
+        
     }
 }

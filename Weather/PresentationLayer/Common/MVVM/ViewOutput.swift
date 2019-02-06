@@ -1,5 +1,5 @@
 //
-//  HomeViewInput.swift
+//  ViewOutput.swift
 //  Weather
 //
 //  Created by Victor Shabanov on 06/02/2019.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol HomeViewInput: class {
+// Base protocol for module' view output
+protocol ViewOutput: class {
     
+    func viewDidLoad()
 }
