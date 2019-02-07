@@ -10,5 +10,7 @@ import Foundation
 
 protocol TodayViewInput: class {
     
+    func configure(city: City?, forecast: OpenWeatherMapResponce.Forecast?)
     
+    func openActivityModule(with activityItems: [Any])
 }

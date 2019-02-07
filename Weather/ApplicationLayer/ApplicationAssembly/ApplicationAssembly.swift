@@ -10,6 +10,10 @@ import Foundation
 
 final class ApplicationAssembly {
     
+    static var timerDemon: Demon = {
+        return TimerDemon()
+    }()
+    
     static var storageService: StorageService = {
         return StorageService()
     }()

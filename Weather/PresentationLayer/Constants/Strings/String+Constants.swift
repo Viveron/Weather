@@ -20,4 +20,8 @@ extension String {
     
     static let degrees = "˚"
     static let celsius = "˚C"
+    static let persent = "%"
+    static let mm = "mm"
+    static let hPa = "hPa"
+    static let kmInH = "km/h"
 }

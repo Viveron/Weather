@@ -110,3 +110,24 @@ final class ParametersPlateView: UIView {
         }
     }
 }
+
+// MARK: - Configuration
+extension ParametersPlateView {
+    
+    func configure(forecast: OpenWeatherMapResponce.Forecast?) {
+        guard let forecast = forecast  else {
+            humidityView.titleLabel.text = nil
+            rainView.titleLabel.text = nil
+            pressureView.titleLabel.text = nil
+            windSpeedView.titleLabel.text = nil
+            degSpeedView.titleLabel.text = nil
+            return
+        }
+        
+        humidityView.titleLabel.text = "\(lroundf(forecast.main.humidity))" + .persent
+        rainView.titleLabel.text = "\(lroundf(forecast.rain?.value ?? 0)) " + .mm
+        pressureView.titleLabel.text = "\(lroundf(forecast.main.pressure)) " + .hPa
+        windSpeedView.titleLabel.text = "\(lroundf(forecast.wind.speed)) " + .kmInH
+        degSpeedView.titleLabel.text = "\(lroundf(forecast.wind.deg))" + .degrees
+    }
+}

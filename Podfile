@@ -9,7 +9,6 @@ target 'Weather' do
 
   # Network
   pod 'Alamofire'
-  pod 'ServiceKit', :source => 'https://github.com/Viveron/Podspecs'
   
   # UI
   pod 'SnapKit'

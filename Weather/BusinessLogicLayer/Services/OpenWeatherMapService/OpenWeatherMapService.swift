@@ -18,6 +18,7 @@ final class OpenWeatherMapService {
         let parameters: Parameters = [
             "lat": coordinate.latitude,
             "lon": coordinate.longitude,
+            "units" : "metric",
             "appid" : Configuration.appid
         ]
         
@@ -32,9 +33,7 @@ final class OpenWeatherMapService {
                     result = JSONDecoder().decodeResponse(from: response)
                 }
                 
-                DispatchQueue.main.async {
-                    completion?(result)
-                }
+                completion?(result)
         }
     }
 }

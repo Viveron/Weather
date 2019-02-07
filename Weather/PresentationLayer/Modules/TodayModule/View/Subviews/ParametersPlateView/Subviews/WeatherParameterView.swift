@@ -33,8 +33,6 @@ final class WeatherParameterView: UIView {
         addSubview(titleLabel)
         
         makeConstraints()
-        
-        titleLabel.text = "57%"
     }
     
     @available(*, unavailable)
@@ -53,7 +51,7 @@ final class WeatherParameterView: UIView {
         
         titleLabel.setContentHuggingPriority(.required, for: .vertical)
         titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(iconLabel.snp.bottom).inset(5)
+            make.top.equalTo(iconLabel.snp.bottom).offset(5)
             make.bottom.left.right.equalToSuperview()
         }
     }

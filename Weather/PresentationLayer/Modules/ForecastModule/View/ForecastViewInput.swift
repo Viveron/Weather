@@ -10,5 +10,6 @@ import Foundation
 
 protocol ForecastViewInput: class {
     
-    
+    func configure(title: String?)
+    func configure(items: [ForecastSectionItem])
 }

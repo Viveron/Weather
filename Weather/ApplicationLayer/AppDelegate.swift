@@ -32,5 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func configureServices() {
         FirebaseApp.configure()
+        ApplicationAssembly.timerDemon.start()
     }
 }

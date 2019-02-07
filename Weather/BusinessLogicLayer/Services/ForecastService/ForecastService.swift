@@ -15,6 +15,7 @@ final class ForecastService {
     private let locationService: LocationService
     private let openWeatherMapService: OpenWeatherMapService
     
+    private let lock = NSLock()
     private let defaults = UserDefaults.standard
     private let notificationCenter = NotificationCenter.default
     
@@ -22,6 +23,7 @@ final class ForecastService {
         let queue = OperationQueue()
         queue.maxConcurrentOperationCount = 1
         queue.name = "weather.demo.obtain.forecast.queue"
+        queue.qualityOfService = .background
         
         return queue
     }()
@@ -76,7 +78,10 @@ final class ForecastService {
     }
     
     private func obtainForecats(_ location: CLLocation, newCity: Bool = false) {
-        guard needUpdateForecast() else {
+        lock.lock()
+        
+        guard newCity || needUpdateForecast() else {
+            lock.unlock()
             return
         }
         
@@ -92,6 +97,8 @@ final class ForecastService {
                     self?.storageService.update(with: nil)
                 }
             }
+            
+            self?.lock.unlock()
         }
     }
     

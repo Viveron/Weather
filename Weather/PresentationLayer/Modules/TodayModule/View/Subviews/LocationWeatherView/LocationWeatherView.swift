@@ -42,10 +42,6 @@ final class LocationWeatherView: UIView {
         stackView.addArrangedSubview(titleLabel)
         
         makeConstraints()
-        
-        iconLabel.text = GeneralWeather.sunny.text
-        locationLabel.text = String(format: "%@, %@", "London", "UK")
-        titleLabel.text = String(format: "%@%@ | %@", "22", String.celsius, "Sunny")
     }
     
     @available(*, unavailable)
@@ -60,5 +56,26 @@ final class LocationWeatherView: UIView {
         stackView.snp.makeConstraints { make in
             make.top.bottom.centerX.equalToSuperview()
         }
+    }
+}
+
+// MARK: - Configuration
+extension LocationWeatherView {
+    
+    func configure(city: City?, forecast: OpenWeatherMapResponce.Forecast?) {
+        guard let city = city, let forecast = forecast  else {
+            iconLabel.text = GeneralWeather.none.text
+            locationLabel.text = nil
+            titleLabel.text = nil
+            return
+        }
+        
+        let weather = forecast.weather.first
+        
+        iconLabel.text = weather?.fontIcon.text ?? nil
+        locationLabel.text = String(format: "%@, %@", city.name, city.country)
+        titleLabel.text = String(format: "%@%@ | %@",
+                                 "\(lroundf(forecast.main.temp))",
+                                 String.celsius, weather?.description.capitalized ?? .empty)
     }
 }

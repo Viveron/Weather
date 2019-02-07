@@ -19,7 +19,7 @@ extension LocationService {
         }
         
         var distanceFilter: CLLocationDistance {
-            return 1000.0
+            return 1_000.0
         }
     }
 }

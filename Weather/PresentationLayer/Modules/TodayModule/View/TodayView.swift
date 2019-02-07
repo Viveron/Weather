@@ -40,7 +40,8 @@ final class TodayView: UIView {
     private func makeConstraints() {
         
         stackView.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().inset(60)
         }
         
         locationView.snp.makeConstraints { make in

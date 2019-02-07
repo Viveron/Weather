@@ -47,6 +47,10 @@ extension OpenWeatherMapResponce.Forecast {
         
         let icon: String
         let description: String
+        
+        var fontIcon: WeatherIcon {
+            return (DayWeather(rawValue: icon) ?? NightWeather(rawValue: icon)) ?? GeneralWeather.none
+        }
     }
     
     struct Clouds: Codable {
