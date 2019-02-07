@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController<OutputType>: UIViewController {
+class ViewController<OutputType, ViewType>: UIViewController where ViewType: UIView {
+    
+    private(set) lazy var customView = ViewType()
     
     // MARK: - Module components
     
@@ -21,5 +23,11 @@ class ViewController<OutputType>: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Life cycle
+    
+    override func loadView() {
+        view = customView
     }
 }

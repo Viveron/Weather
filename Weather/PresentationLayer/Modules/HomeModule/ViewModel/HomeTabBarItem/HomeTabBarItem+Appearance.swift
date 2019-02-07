@@ -12,8 +12,8 @@ extension HomeTabBarItem {
     
     struct Appearance {
         
-        static let normalTintColor: UIColor = .black
-        static let selectedTintColor: UIColor = UIColor(hex: 0xFF8A00)
+        static let normalTintColor: UIColor = .night
+        static let selectedTintColor: UIColor = .oran
         
         static let titleFont = UIFont(Roboto.medium, size: .lite)
     }

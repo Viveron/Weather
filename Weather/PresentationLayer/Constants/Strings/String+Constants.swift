@@ -17,4 +17,7 @@ extension String {
     static let comma = ","
     
     static let zero = "0"
+    
+    static let degrees = "˚"
+    static let celsius = "˚C"
 }

@@ -64,7 +64,6 @@ final class LocationService: NSObject {
         case .authorizedAlways, .authorizedWhenInUse:
             notify(.LocationServiceDidAuthorized)
             locationManager.startUpdatingLocation()
-            locationManager.startUpdatingHeading()
             
         case .restricted, .denied:
             notify(.LocationServiceDidDenied)

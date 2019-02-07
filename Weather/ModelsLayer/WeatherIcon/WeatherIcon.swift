@@ -11,7 +11,7 @@ import Foundation
 protocol WeatherIcon: Codable {
     
     // UI representation
-    var formatted: String { get }
+    var text: String { get }
 }
 
 enum DayWeather: String, WeatherIcon {
@@ -58,7 +58,7 @@ enum GeneralWeather: UniChar, WeatherIcon {
 // MARK: - WeatherIcon Protocol default implementation for String
 extension WeatherIcon where Self: RawRepresentable, Self.RawValue == String {
     
-    var formatted: String {
+    var text: String {
         return WeatherFormatter.formattedSring(rawValue)
     }
 }
@@ -66,7 +66,7 @@ extension WeatherIcon where Self: RawRepresentable, Self.RawValue == String {
 // MARK: - WeatherIcon Protocol default implementation for UniChar
 extension WeatherIcon where Self: RawRepresentable, Self.RawValue == UniChar {
     
-    var formatted: String {
+    var text: String {
         return WeatherFormatter.formattedUniChar(rawValue)
     }
 }

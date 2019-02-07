@@ -37,7 +37,9 @@ extension UIFont {
         /// 20pt font size
         case big    = 20
         /// 24pt font size
-        case extra  = 24
+        case large  = 24
+        /// 30pt font size
+        case extra  = 30
     }
     
     convenience init?(_ fontFamily: FontFamily, size: UIFont.Size) {

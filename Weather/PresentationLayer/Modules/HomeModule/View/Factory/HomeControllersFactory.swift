@@ -15,14 +15,14 @@ final class HomeControllersFactory {
         
         switch item {
         case .today:
-            controller = UIViewController()
+            controller = TodayModuleAssembly.createModule()
             
         case .forecast:
-            controller = UIViewController()
+            controller = ForecastModuleAssembly.createModule()
         }
         
         controller.tabBarItem = makeTabBarItem(at: item)
-        controller.title = item.title
+        controller.navigationItem.title = item.title
         return UINavigationController(rootViewController: controller)
     }
     

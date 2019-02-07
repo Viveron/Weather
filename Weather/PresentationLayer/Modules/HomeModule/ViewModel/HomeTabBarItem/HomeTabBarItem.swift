@@ -27,7 +27,7 @@ enum HomeTabBarItem: String {
             icon = .lightning
         }
         
-        return UILabel.weatherImage(for: icon,
-                                    imageSize: CGSize(width: 30, height: 30))
+        let size = CGSize(width: 30, height: 30)
+        return UIImage.weatherImage(for: icon, size: size)
     }
 }

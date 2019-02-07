@@ -18,4 +18,31 @@ extension UIImage {
         
         self.init(cgImage: (image?.cgImage)!)
     }
+    
+    static func weatherImage(for weatherIcon: WeatherIcon,
+                             size: CGSize,
+                             tintColor: UIColor = .black,
+                             fontSize: UIFont.Size = .big,
+                             adjustsFontSize: Bool = true) -> UIImage? {
+        
+        let rect = CGRect(origin: .zero, size: size)
+        
+        let label = UILabel()
+        label.frame = rect
+        label.font = UIFont(WeatherIcons.regular, size: fontSize)
+        label.adjustsFontSizeToFitWidth = adjustsFontSize
+        label.textColor = tintColor
+        label.textAlignment = .center
+        label.text = weatherIcon.text
+        
+        let container = UIView()
+        container.frame = rect
+        container.backgroundColor = .clear
+        container.addSubview(label)
+        container.setNeedsLayout()
+        container.layoutIfNeeded()
+        container.drawHierarchy(in: rect, afterScreenUpdates: true)
+        
+        return UIImage(view: container)
+    }
 }

@@ -10,4 +10,8 @@ target 'Weather' do
   # Network
   pod 'Alamofire'
   
+  # UI
+  pod 'SnapKit'
+  pod 'TableKit'
+  
 end

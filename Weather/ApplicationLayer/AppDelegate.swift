@@ -24,13 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.rootViewController = HomeModuleAssembly.createModule()
         window?.makeKeyAndVisible()
-        
-        let coordinate = CLLocationCoordinate2D(latitude: 12, longitude: 23)
-        
-        OpenWeatherMapService().obtainForecast(coordinate) { responce in
-            
-        }
-        
+
         return true
     }
     
