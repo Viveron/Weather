@@ -62,6 +62,13 @@
 		0CC8355A220B9260006E0F92 /* ParametersPlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC83559220B9260006E0F92 /* ParametersPlateView.swift */; };
 		0CC8355F220B92FB006E0F92 /* WeatherParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC8355E220B92FB006E0F92 /* WeatherParameterView.swift */; };
 		0CF02C6A220A58A20094ECA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CF02C69220A58A20094ECA7 /* GoogleService-Info.plist */; };
+		87471F65220C552400F01C3D /* TimerDemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87471F64220C552400F01C3D /* TimerDemon.swift */; };
+		87471F68220C569600F01C3D /* Demon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87471F67220C569600F01C3D /* Demon.swift */; };
+		87471F6A220C787600F01C3D /* TimerDemon+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87471F69220C787600F01C3D /* TimerDemon+Notifications.swift */; };
+		87471F6D220C913300F01C3D /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87471F6C220C913300F01C3D /* StorageService.swift */; };
+		87471F71220C979600F01C3D /* StorageServiceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87471F70220C979600F01C3D /* StorageServiceObserver.swift */; };
+		87471F74220CA0B400F01C3D /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87471F73220CA0B400F01C3D /* ApplicationAssembly.swift */; };
+		87471F77220CAC9200F01C3D /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87471F76220CAC9200F01C3D /* DataViewModel.swift */; };
 		C2E87CBDBE20C4B8247E2E51 /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7DA9006C2D44755D57F593 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +131,13 @@
 		0CC8355E220B92FB006E0F92 /* WeatherParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherParameterView.swift; sourceTree = "<group>"; };
 		0CF02C69220A58A20094ECA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A7DA9006C2D44755D57F593 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87471F64220C552400F01C3D /* TimerDemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDemon.swift; sourceTree = "<group>"; };
+		87471F67220C569600F01C3D /* Demon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demon.swift; sourceTree = "<group>"; };
+		87471F69220C787600F01C3D /* TimerDemon+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerDemon+Notifications.swift"; sourceTree = "<group>"; };
+		87471F6C220C913300F01C3D /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		87471F70220C979600F01C3D /* StorageServiceObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceObserver.swift; sourceTree = "<group>"; };
+		87471F73220CA0B400F01C3D /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		87471F76220CAC9200F01C3D /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 		B816F478CD2AC19820A42DDD /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		FF6C5353ABB15CB8A02E717C /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				0C9FEAE7220A55E3007F05F7 /* AppDelegate.swift */,
+				87471F72220CA08700F01C3D /* ApplicationAssembly */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -235,6 +250,7 @@
 		0CC834C7220A76B8006E0F92 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				87471F63220C550F00F01C3D /* Demons */,
 				0CC83521220B43B3006E0F92 /* Services */,
 			);
 			path = BusinessLogicLayer;
@@ -264,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				0CC834FF220AFE7A006E0F92 /* MVVM */,
+				87471F75220CAC8300F01C3D /* DataViewModel */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -480,9 +497,10 @@
 		0CC83521220B43B3006E0F92 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				87471F6B220C911500F01C3D /* StorageService */,
 				0CC83522220B43BC006E0F92 /* LocationService */,
-				0CC83527220B4E98006E0F92 /* OpenWeatherMapService */,
 				0CC83530220B6502006E0F92 /* ForecastService */,
+				0CC83527220B4E98006E0F92 /* OpenWeatherMapService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -645,6 +663,49 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		87471F63220C550F00F01C3D /* Demons */ = {
+			isa = PBXGroup;
+			children = (
+				87471F67220C569600F01C3D /* Demon.swift */,
+				87471F66220C568900F01C3D /* TimerDemon */,
+			);
+			path = Demons;
+			sourceTree = "<group>";
+		};
+		87471F66220C568900F01C3D /* TimerDemon */ = {
+			isa = PBXGroup;
+			children = (
+				87471F64220C552400F01C3D /* TimerDemon.swift */,
+				87471F69220C787600F01C3D /* TimerDemon+Notifications.swift */,
+			);
+			path = TimerDemon;
+			sourceTree = "<group>";
+		};
+		87471F6B220C911500F01C3D /* StorageService */ = {
+			isa = PBXGroup;
+			children = (
+				87471F6C220C913300F01C3D /* StorageService.swift */,
+				87471F70220C979600F01C3D /* StorageServiceObserver.swift */,
+			);
+			path = StorageService;
+			sourceTree = "<group>";
+		};
+		87471F72220CA08700F01C3D /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				87471F73220CA0B400F01C3D /* ApplicationAssembly.swift */,
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		87471F75220CAC8300F01C3D /* DataViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				87471F76220CAC9200F01C3D /* DataViewModel.swift */,
+			);
+			path = DataViewModel;
+			sourceTree = "<group>";
+		};
 		CD18A127EB302ECE833831DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,6 +811,7 @@
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/ServiceKit/ServiceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TableKit/TableKit.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -765,6 +827,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ServiceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TableKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -813,6 +876,7 @@
 				0CC83548220B6A8B006E0F92 /* ForecastViewModel.swift in Sources */,
 				0CC83506220B03D1006E0F92 /* FontFamily+WeatherIcons.swift in Sources */,
 				0CC834F5220AEF64006E0F92 /* FontFamily.swift in Sources */,
+				87471F6A220C787600F01C3D /* TimerDemon+Notifications.swift in Sources */,
 				0C9FEAE8220A55E3007F05F7 /* AppDelegate.swift in Sources */,
 				0CC83518220B3741006E0F92 /* City.swift in Sources */,
 				0CC834D4220A80EA006E0F92 /* HomeViewModel.swift in Sources */,
@@ -821,6 +885,7 @@
 				0CC834E6220AE226006E0F92 /* Swift+Blocks.swift in Sources */,
 				0CC83550220B6C23006E0F92 /* ForecastView.swift in Sources */,
 				0CC8354A220B6A9C006E0F92 /* ForecastViewController.swift in Sources */,
+				87471F65220C552400F01C3D /* TimerDemon.swift in Sources */,
 				0CC8350F220B2574006E0F92 /* UIImage+Extensions.swift in Sources */,
 				0CC8351D220B4329006E0F92 /* JSONDecoder+Extensions.swift in Sources */,
 				0CC83526220B45CE006E0F92 /* LocationService+Notifications.swift in Sources */,
@@ -834,13 +899,18 @@
 				0CC83555220B888F006E0F92 /* LocationWeatherView.swift in Sources */,
 				0CC834F7220AEFDC006E0F92 /* FontFamily+Roboto.swift in Sources */,
 				0CC83542220B6949006E0F92 /* TodayModuleAssembly.swift in Sources */,
+				87471F68220C569600F01C3D /* Demon.swift in Sources */,
 				0CC83540220B685B006E0F92 /* TodayView.swift in Sources */,
 				0CC834D9220A825C006E0F92 /* HomeControllersFactory.swift in Sources */,
+				87471F71220C979600F01C3D /* StorageServiceObserver.swift in Sources */,
+				87471F77220CAC9200F01C3D /* DataViewModel.swift in Sources */,
 				0CC834E1220AE1B4006E0F92 /* HomeViewInput.swift in Sources */,
 				0CC8354C220B6B16006E0F92 /* ForecastViewInput.swift in Sources */,
+				87471F6D220C913300F01C3D /* StorageService.swift in Sources */,
 				0CC8352B220B5109006E0F92 /* Error+Extensions.swift in Sources */,
 				0CC83509220B04C3006E0F92 /* WeatherIcon.swift in Sources */,
 				0CC834DF220AE17D006E0F92 /* HomeViewOutput.swift in Sources */,
+				87471F74220CA0B400F01C3D /* ApplicationAssembly.swift in Sources */,
 				0CC83552220B6D89006E0F92 /* ForecastModuleAssembly.swift in Sources */,
 				0CC834FA220AFD55006E0F92 /* TabBarController.swift in Sources */,
 				0CC8353C220B6811006E0F92 /* TodayViewInput.swift in Sources */,

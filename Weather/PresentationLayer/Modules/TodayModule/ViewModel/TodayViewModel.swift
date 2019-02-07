@@ -8,15 +8,16 @@
 
 import Foundation
 
-final class TodayViewModel: TodayViewOutput {
+final class TodayViewModel: DataViewModel, TodayViewOutput {
     
     // MARK: - Module components
     
     weak var input: TodayViewInput?
     
-    // MARK: - TodayViewOutput
-    
-    func viewDidLoad() {
+    override func processResponce(_ responce: OpenWeatherMapResponce?) {
+        super.processResponce(responce)
         
     }
+    
+    // MARK: - Private methods
 }

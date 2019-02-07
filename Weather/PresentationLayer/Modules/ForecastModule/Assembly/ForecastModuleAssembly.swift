@@ -11,7 +11,7 @@ import UIKit
 final class ForecastModuleAssembly {
     
     static func createModule() -> UIViewController {
-        let viewModel = ForecastViewModel()
+        let viewModel = ForecastViewModel(storageService: ApplicationAssembly.storageService)
         let view = ForecastViewController(viewModel)
         
         viewModel.input = view

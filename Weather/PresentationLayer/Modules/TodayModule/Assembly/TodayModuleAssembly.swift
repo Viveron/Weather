@@ -11,7 +11,7 @@ import UIKit
 final class TodayModuleAssembly {
     
     static func createModule() -> UIViewController {
-        let viewModel = TodayViewModel()
+        let viewModel = TodayViewModel(storageService: ApplicationAssembly.storageService)
         let view = TodayViewController(viewModel)
         
         viewModel.input = view

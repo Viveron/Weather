@@ -10,7 +10,7 @@ import Foundation
 
 extension OpenWeatherMapResponce {
     
-    struct Forecast: Decodable {
+    struct Forecast: Codable {
         
         let date: String
         let timestamp: TimeInterval
@@ -36,20 +36,20 @@ extension OpenWeatherMapResponce {
 // MARK: - Components
 extension OpenWeatherMapResponce.Forecast {
     
-    struct Main: Decodable {
+    struct Main: Codable {
         
         let temp: Float
         let pressure: Float
         let humidity: Float
     }
     
-    struct Weather: Decodable {
+    struct Weather: Codable {
         
         let icon: String
         let description: String
     }
     
-    struct Clouds: Decodable {
+    struct Clouds: Codable {
         
         let value: Float
         
@@ -58,13 +58,13 @@ extension OpenWeatherMapResponce.Forecast {
         }
     }
     
-    struct Wind: Decodable {
+    struct Wind: Codable {
         
         let speed: Float
         let deg: Float
     }
     
-    struct Rain: Decodable {
+    struct Rain: Codable {
         
         let value: Float?
         

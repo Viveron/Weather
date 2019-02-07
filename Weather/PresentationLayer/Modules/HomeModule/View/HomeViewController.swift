@@ -43,4 +43,19 @@ final class HomeViewController: TabBarController<HomeViewOutput> {
 // MARK: - HomeViewInput
 extension HomeViewController: HomeViewInput {
     
+    func showLocationServiceDeniedAlert() {
+        let alertController = UIAlertController(title: "Location is not available!",
+                                                message: "Go to settings for available access to notification",
+                                                preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let settingsAction = UIAlertAction(title: "Settings", style: .default) { [weak self] _ in
+            self?.output.openAppSettings()
+        }
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(settingsAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 }

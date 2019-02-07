@@ -14,12 +14,12 @@ extension LocationService {
     enum Accuracy {
         case `default`
         
-        fileprivate func locationAccuracy() -> CLLocationAccuracy {
-            return kCLLocationAccuracyThreeKilometers
+        var locationAccuracy: CLLocationAccuracy {
+            return kCLLocationAccuracyKilometer
         }
         
-        fileprivate func distanceFilter() -> CLLocationDistance {
-            return 3000.0
+        var distanceFilter: CLLocationDistance {
+            return 1000.0
         }
     }
 }
@@ -52,8 +52,8 @@ final class LocationService: NSObject {
     // MARK: - Private methods
     
     private func updateSettings() {
-        locationManager.desiredAccuracy = accuracy.locationAccuracy()
-        locationManager.distanceFilter = accuracy.distanceFilter()
+        locationManager.desiredAccuracy = accuracy.locationAccuracy
+        locationManager.distanceFilter = accuracy.distanceFilter
     }
     
     private func processAuthorization(status: CLAuthorizationStatus) {
@@ -79,7 +79,7 @@ final class LocationService: NSObject {
 extension LocationService: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        notify(.LocationServiceDidUpdate)
+        notify(.LocationServiceDidUpdated)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

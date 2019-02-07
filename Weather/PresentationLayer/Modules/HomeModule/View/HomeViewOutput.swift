@@ -11,4 +11,6 @@ import Foundation
 protocol HomeViewOutput: ViewOutput {
     
     var items: [HomeTabBarItem] { get }
+    
+    func openAppSettings()
 }

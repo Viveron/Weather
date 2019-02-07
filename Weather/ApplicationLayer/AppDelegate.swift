@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.rootViewController = HomeModuleAssembly.createModule()
         window?.makeKeyAndVisible()
-
+        
         return true
     }
     

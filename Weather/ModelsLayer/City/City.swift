@@ -7,10 +7,28 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct City: Codable {
     
     let id: Int64
     let name: String
     let country: String
+    
+    let coord: Coordinates
+    
+    var location: CLLocation {
+        return CLLocation(latitude: coord.lat,
+                          longitude: coord.lon)
+    }
+}
+
+// MARK: - Components
+extension City {
+    
+    struct Coordinates: Codable {
+        
+        let lon: Double
+        let lat: Double
+    }
 }

@@ -10,4 +10,5 @@ import Foundation
 
 protocol HomeViewInput: class {
     
+    func showLocationServiceDeniedAlert()
 }

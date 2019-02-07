@@ -16,5 +16,5 @@ extension Notification.Name {
     static let LocationServiceDidFail       = Notification.Name(rawValue: "LocationServiceDidFail")
     
     // Location updation noticiation
-    static let LocationServiceDidUpdate     = Notification.Name(rawValue: "LocationServiceDidUpdate")
+    static let LocationServiceDidUpdated    = Notification.Name(rawValue: "LocationServiceDidUpdated")
 }

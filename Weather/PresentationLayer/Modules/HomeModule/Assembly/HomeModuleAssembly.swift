@@ -11,7 +11,7 @@ import UIKit
 final class HomeModuleAssembly {
     
     static func createModule() -> UIViewController {
-        let viewModel = HomeViewModel()
+        let viewModel = HomeViewModel(forecastService: ApplicationAssembly.forecastService)
         let view = HomeViewController(viewModel)
         
         viewModel.input = view

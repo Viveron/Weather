@@ -89,6 +89,11 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
+  - ServiceKit (0.2.0):
+    - ServiceKit/NetworkConnectionService (= 0.2.0)
+    - ServiceKit/StoreService (= 0.2.0)
+  - ServiceKit/NetworkConnectionService (0.2.0)
+  - ServiceKit/StoreService (0.2.0)
   - SnapKit (4.2.0)
   - TableKit (2.8.1)
 
@@ -96,6 +101,7 @@ DEPENDENCIES:
   - Alamofire
   - Firebase/Core
   - FirebaseFirestore
+  - ServiceKit
   - SnapKit
   - TableKit
 
@@ -118,6 +124,8 @@ SPEC REPOS:
     - Protobuf
     - SnapKit
     - TableKit
+  https://github.com/Viveron/Podspecs:
+    - ServiceKit
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
@@ -135,9 +143,10 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  ServiceKit: e994831b039fa383340832dd8e7cc87d941b2525
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   TableKit: 18a0049dea981c1106409bdeebc763ef74d36f02
 
-PODFILE CHECKSUM: fe8f4e4769ed6b9e8e1cacc2735ad5aa4faad583
+PODFILE CHECKSUM: 53e3274254b9ad2a434443c91aa666fd3886c4d2
 
-COCOAPODS: 1.6.0.rc.1
+COCOAPODS: 1.6.0

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct OpenWeatherMapResponce: Decodable {
+struct OpenWeatherMapResponce: Codable {
     
     let city: City
     let list: [Forecast]
